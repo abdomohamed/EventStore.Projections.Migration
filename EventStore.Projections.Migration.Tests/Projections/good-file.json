@@ -1,0 +1,10 @@
+﻿fromAll()
+  .when({ 
+    $any: function(s,e) {
+    if(!e.metadata) return;
+    if(!e.metadata.Category) return;
+    if(e.metadata.Category != "Domain") return;
+        
+    linkTo("domain-events", e);
+  }
+  })
