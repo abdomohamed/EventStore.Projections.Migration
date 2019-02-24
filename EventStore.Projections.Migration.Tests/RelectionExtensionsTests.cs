@@ -18,6 +18,7 @@ namespace EventStore.Projections.Migration.Tests
             var metadata = type.GetMirgationMetadata();           
             metadata.GetType().ShouldBe(typeof(NullMigrationMetadata));
         }
+       
         [Fact]
         public void GetMirgationMetadata_WhenCalled_ShouldReturnValidMetadata()
         {
@@ -30,12 +31,28 @@ namespace EventStore.Projections.Migration.Tests
                 FileName = "good-file.json",
                 AssignedTo = type,
                 Location = type.Assembly,
+                PreRequristeFiles = new string[] {}
             };
             
-            metadata.Should().BeEquivalentTo(expectedMetadata, config =>
+            metadata.Should().BeEquivalentTo(expectedMetadata);
+        }
+        
+        [Fact]
+        public void GetMirgationMetadata_WhenCalled_ShouldReturnValidMetadata()
+        {
+            var type = typeof(GoodMigration);
+            var metadata = type.GetMirgationMetadata();
+            var expectedMetadata = new MigrationMetadata()
             {
-                config.ex
-            });cl
+                Order = 1, 
+                ProjectionName = "test-proj", 
+                FileName = "good-file.json",
+                AssignedTo = type,
+                Location = type.Assembly,
+                PreRequristeFiles = new string[] {}
+            };
+            
+            metadata.Should().BeEquivalentTo(expectedMetadata);
         }
     }
 }
