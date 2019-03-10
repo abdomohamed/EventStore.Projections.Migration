@@ -7,9 +7,6 @@
   <ItemGroup>
     <PackageReference Include="EventStore.ClientAPI.NetCore" Version="4.1.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EventStore.Projections.Migration.Core\EventStore.Projections.Migration.Core\EventStore.Projections.Migration.Core.csproj" />
-  </ItemGroup>
+  
 
 </Project>

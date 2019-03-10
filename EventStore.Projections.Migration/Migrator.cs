@@ -3,10 +3,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using EventStore.ClientAPI.Projections;
 using EventStore.ClientAPI.SystemData;
-using EventStore.Projections.Migration.Core;
-using EventStore.Projections.Migration.Core.Validation;
+using EventStore.Projections.Migration.Validation;
 
-namespace EventStore.Projections.Migrations
+namespace EventStore.Projections.Migration
 {
     /// <summary>
     /// Used to run migrations

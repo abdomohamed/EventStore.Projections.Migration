@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EventStore.Projections.Migration.Core\EventStore.Projections.Migration.Core\EventStore.Projections.Migration.Core.csproj" />
+    <ProjectReference Include="..\EventStore.Projections.Migration\EventStore.Projections.Migration.csproj" />
     <ProjectReference Include="..\EventStore.Projections.Migration\EventStore.Projections.Migration.csproj" />
   </ItemGroup>
 

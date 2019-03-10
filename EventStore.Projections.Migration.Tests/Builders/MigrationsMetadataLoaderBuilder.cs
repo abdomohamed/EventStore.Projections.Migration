@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using EventStore.Projections.Migration.Core;
+using EventStore.Projections.Migration;
 using NSubstitute;
 
 namespace EventStore.Projections.Migration.Tests.Builders

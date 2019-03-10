@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace EventStore.Projections.Migrations
+namespace EventStore.Projections.Migration
 {
     public interface IMigrator
     {

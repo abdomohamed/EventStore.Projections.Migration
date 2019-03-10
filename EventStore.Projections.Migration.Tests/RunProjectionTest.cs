@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Reflection;
-using EventStore.Projections.Migration.Core;
-using EventStore.Projections.Migration.Core.Exceptions;
-using EventStore.Projections.Migration.Core.Validation;
+using EventStore.Projections.Migration;
+using EventStore.Projections.Migration.Exceptions;
+using EventStore.Projections.Migration.Validation;
 using EventStore.Projections.Migration.Tests.Builders;
 using EventStore.Projections.Migration.Tests.Projections;
 using Xunit;

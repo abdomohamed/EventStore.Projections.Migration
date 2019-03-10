@@ -1,4 +1,4 @@
-﻿using EventStore.Projections.Migration.Core;
+﻿using EventStore.Projections.Migration;
 
 namespace EventStore.Projections.Migration.Tests.Projections
 {
