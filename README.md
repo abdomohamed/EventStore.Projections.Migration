@@ -1,3 +1,3 @@
 EventStore.Projections.Migration
 ==========
-   Is a .net library that will help you to deploy projections to eventstore server.
+   Is a .net library for deploying Eventstore projections.
