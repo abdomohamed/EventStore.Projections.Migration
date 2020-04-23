@@ -16,7 +16,7 @@ namespace EventStore.Projections.Migration.Tests.Builders
         public MigrationsMetadataLoaderBuilder WithMetadata(params MigrationMetadata[] metadata)
         {
             _returnedMetadata = metadata == null || metadata.Length < 0 ? _returnedMetadata 
-                               :_returnedMetadata = new List<MigrationMetadata>(metadata);
+                               : new List<MigrationMetadata>(metadata);
             return this;
         }
 
